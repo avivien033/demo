@@ -40,11 +40,11 @@
                              targetPackage="com.jiawa.wiki.mapper"
                              type="XMLMAPPER"/>
 
-        <!--<table tableName="demo" domainObjectName="Demo"/>-->
-        <table tableName="ebook"/>
+        <table tableName="demo" domainObjectName="Demo"/>
+<!--        <table tableName="ebook"/>-->
         <!--<table tableName="category"/>-->
         <!--<table tableName="doc"/>-->
         <!--<table tableName="content"/>-->
-        <table tableName="test"/>
+<!--        <table tableName="test"/>-->
     </context>
 </generatorConfiguration>
