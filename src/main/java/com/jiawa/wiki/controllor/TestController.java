@@ -1,17 +1,21 @@
 package com.jiawa.wiki.controllor;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
+    @Value("${test.hello}")
+    private  String testHello;
     @RequestMapping("/hello")
     public  String hello(){
-        return "hello word";
+        return "hello word"+testHello;
     }
 @PostMapping("/hello/post")
     public  String helloPost( String name){
         return "hello word"+name;
     }
+
 }
